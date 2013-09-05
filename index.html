@@ -8,12 +8,12 @@
 </head>
 <body>
 
-  <h1>press <kbd>enter</kbd>, <kbd>,</kbd> or <kbd>tab</kbd> to separate tags</h1>
+  <h1>press <kbd>enter</kbd>, <kbd>,</kbd>, <kbd>space</kbd> or <kbd>tab</kbd> to separate tags</h1>
 
   <div id="form_container">
 
-    <form accept-charset="UTF-8" action="#" class="the_form" method="post">      
-      <input id="tag_list" name="tag_list" type="hidden" value="">
+    <form id= "the_form" accept-charset="UTF-8" action="http://localhost:3000/dumb_post" method="post">      
+      <input id="tag_list_old" name="tag_list_old" type="hidden" value="">
 
       <div id="tag_box" class="">
         <div class="tag_element">
@@ -29,6 +29,8 @@
     </form>
 
   </div>
+
+ok, come rimuovo i nuovi hidden input quando elimino un tag?
 
 </body>
 </html>

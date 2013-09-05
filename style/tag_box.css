@@ -210,6 +210,7 @@ kbd {
   line-height: 13px;
   padding: 5px 8px 2px;
   border: 1px solid #aaa;
+  margin-right: 3px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
