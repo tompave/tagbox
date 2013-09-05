@@ -148,7 +148,7 @@ body {
 }
 
 /* line 94, ../sass/tag_box.scss */
-#hidden_input {
+#type_target {
   height: 22px;
   width: 40px;
   padding: 0px 5px;
@@ -160,7 +160,7 @@ body {
   background-color: #fff7b8;
 }
 /* line 105, ../sass/tag_box.scss */
-#hidden_input:focus {
+#type_target:focus {
   outline: none;
 }
 
