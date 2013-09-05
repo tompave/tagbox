@@ -49,10 +49,9 @@ function setupTypeTargetKeyPressHandling(){
     });
 
     //adjust width on keyup as well, to cover any case (crossbrowser)
-    //also, fires the ajax request
     jq_typeTarget.keyup(function(event){
         adjustTypeTargetWidth();
-        //handleAutocompletionRemote();        
+        //searchSuggestions();
     });
 }
 
@@ -73,28 +72,6 @@ function setupDimissTagListener() {
 }
 
 
-
-
-
-
-
-/**
- *
- */
-function handleAutocompletionRemote(){
-    var jq_typeTarget = $("#type_target");
-    var text = jq_typeTarget.val();
-
-    if(text.length > 2) {
-        var api_url = window.location.protocol + "//" +
-                    window.location.host +
-                    "/suggestions.js?prompt=" +
-                    encodeURIComponent(text);
-        $.ajax({url:api_url});
-    }
-    else
-        $("#suggestions_box").remove();
-}
 
 
 
