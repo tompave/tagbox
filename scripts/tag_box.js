@@ -83,7 +83,7 @@ function adjustTypeTargetWidth() {
     var jq_typeTarget = $("#type_target");
     var len = jq_typeTarget.val().length;
 
-    jq_typeTarget.css("width", len*10);
+    jq_typeTarget.css("width", len*11);
 
     if(parseInt(jq_typeTarget.css("width")) < 40){
         jq_typeTarget.css("width", "40px")
