@@ -5,6 +5,14 @@ $(function(e) {
     $("#type_target").keyup(function(event){
         updatePreview();
     });
+
+    $("#tag_box").click(function(event){
+        updatePreview();
+    });
+
+    $("#type_target").blur(function(event){
+        updatePreview();
+    });
 });
 
 
