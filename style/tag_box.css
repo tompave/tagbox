@@ -220,3 +220,16 @@ kbd {
   -moz-box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.3), inset 0 0 3px 0 rgba(0, 0, 0, 0.1);
   box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.3), inset 0 0 3px 0 rgba(0, 0, 0, 0.1);
 }
+
+/* line 167, ../sass/tag_box.scss */
+pre {
+  font-family: consolas, monospace;
+  font-size: 12px;
+  border: 1px solid #aaa;
+  padding: 3px;
+  overflow-x: auto;
+  overflow-y: visible;
+  height: auto;
+  width: 800px;
+  margin: 20px auto;
+}

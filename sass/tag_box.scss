@@ -163,3 +163,16 @@ kbd {
                       inset 0 0 3px 0 rgba(0,0,0,0.1));
 }
 
+
+pre {
+  font-family: consolas, monospace;
+  font-size: 12px;
+  border: 1px solid #aaa;
+  padding: 3px;
+  overflow-x: auto;
+  overflow-y: visible;
+  height: auto;
+  width: 800px;
+  margin: 20px auto;
+}
+
