@@ -113,10 +113,10 @@ function adjustHiddenInputWidth() {
     var jq_hiddenInput = $("#hidden_input");
     var len = jq_hiddenInput.val().length;
 
-    jq_hiddenInput.css("width", len*11);
+    jq_hiddenInput.css("width", len*10);
 
-    if(parseInt(jq_hiddenInput.css("width")) < 60){
-        jq_hiddenInput.css("width", "60px")
+    if(parseInt(jq_hiddenInput.css("width")) < 40){
+        jq_hiddenInput.css("width", "40px")
     }
 }
 
