@@ -5,3 +5,136 @@
 @import "TP_variables";
 @import "TP_mixins";
 
+
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+
+#form_container {
+  width: 400px;
+  margin: 25px auto;
+}
+
+#tag_box {
+  @include box-sizing("border-box");
+  @include text_area_appearance;
+
+  position: relative;
+
+  
+  min-height: 100px;
+  height: auto;
+
+
+  padding: 5px 5px;
+  margin: 5px auto 20px;
+
+  overflow-y: visible;
+  overflow-x: hidden;
+
+}
+
+
+
+
+.tag_element {
+  display: inline-block;
+  min-width: 30px;
+  width: auto;
+  height: 14px;
+
+  padding: 5px 7px 5px 7px;
+  margin: 3px;
+
+  line-height: 14px;
+  font-size: 13px;
+  text-align: left;
+  vertical-align: middle;
+
+  border: 1px solid #999;
+  border-radius: 4px;
+
+  @include box-shadow(0 0 4px rgba(0,0,0,0.3),
+              inset 0 0 0 1px rgba(255,255,255,0.4));
+
+  
+  background-color: $tag_blue;
+
+  &:hover {
+    background-color: darken($tag_blue, 10%);
+  }
+
+  cursor: pointer;
+}
+
+
+
+.tag_label {
+  float: left;
+}
+
+
+
+.tag_dismiss {
+  float: right;
+  margin-left: 10px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  &:hover {
+    color: #ffc540;
+    text-decoration: none;
+  }
+}
+
+
+
+#hidden_input {
+  height: 22px;
+  width: 60px;
+  padding: 0px 5px;
+  margin: 4px 0px;
+  font-size: 14px;
+
+  box-shadow: none;
+  border: none;
+  &:focus { outline: none; }
+
+  // border: 1px solid #aaa;
+  // border-radius: 4px;
+  background-color: #fff7b8;  
+}
+
+
+
+
+input[type="submit"] {
+  @include box-sizing("border-box");
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+
+  display: block;
+
+  margin: 0 auto;
+  padding: 4px 10px;
+
+  border: 1px solid #777;
+  border-radius: 3px;
+
+  font-size: 13px;
+  text-decoration: none;
+  color: #555;
+  text-align: center;
+
+  background-color: #fff;
+
+  @include transition(background-color 0.4s, color 0.4s);
+  &:hover {
+    color: #fff;
+    background-color: $blue;
+  }
+}

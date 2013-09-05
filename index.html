@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>tag box</title>
+  <link rel="stylesheet" type="text/css" href="style/tag_box.css">
+  <script type="text/javascript" src="scripts/jquery-2.0.3.min.js"></script>
+  <script type="text/javascript" src="scripts/tag_box.js"></script>
+</head>
+<body>
+
+  <div id="form_container">
+
+    <form accept-charset="UTF-8" action="#" class="the_form" method="post">
+
+
+        
+      <input id="tag_list" name="tag_list" type="hidden" value="">
+
+
+      <div id="tag_box" class="">
+            <div class="tag_element" data-skillname="c++ programming">
+              <span class="tag_label">example</span>
+              <a href="#" title="remove" class="tag_dismiss">&times;</a>
+            </div>
+
+        <input id="hidden_input" name="hidden_input" type="text" maxlength="40" style="width: 60px;">
+      </div>
+
+      <script type="text/javascript">
+        var skills_input = $("#tag_list");
+
+        $("#tag_box").find(".tag_dismiss").click(function(){  
+          var this_tag = $(this).parent();
+          this_tag.remove(); //ok...
+          var old_text = skills_input.val();
+          var pattern = this_tag.attr("data-skillname") + "$%";
+          var corrected_value = old_text.replace(pattern, "");
+          skills_input.val(corrected_value);
+        });
+      </script>
+
+
+      <input class="submit_btn" name="commit" type="submit" value="submit">
+    </form>
+
+  </div>
+
+</body>
+</html>
