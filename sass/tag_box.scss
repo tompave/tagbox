@@ -23,7 +23,7 @@ body {
   position: relative;
 
   
-  min-height: 100px;
+  min-height: 80px;
   height: auto;
 
 
@@ -138,3 +138,25 @@ input[type="submit"] {
     background-color: $blue;
   }
 }
+
+
+h1 {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin: 25px auto 20px;
+  color: #555;
+}
+
+kbd {
+  font-family: consolas, monospace;
+  font-size: 0.8em;
+  line-height: 13px;
+  padding: 5px 8px 2px;
+  border: 1px solid #aaa;
+  @include border-radius(3px);
+
+  @include box-shadow(0 1px 1px 1px rgba(0,0,0,0.3),
+                      inset 0 0 3px 0 rgba(0,0,0,0.1));
+}
+

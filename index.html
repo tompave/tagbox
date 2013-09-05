@@ -8,39 +8,24 @@
 </head>
 <body>
 
+  <h1>press <kbd>enter</kbd>, <kbd>,</kbd> or <kbd>tab</kbd> to separate tags</h1>
+
   <div id="form_container">
 
-    <form accept-charset="UTF-8" action="#" class="the_form" method="post">
-
-
-        
+    <form accept-charset="UTF-8" action="#" class="the_form" method="post">      
       <input id="tag_list" name="tag_list" type="hidden" value="">
 
-
       <div id="tag_box" class="">
-            <div class="tag_element" data-skillname="c++ programming">
-              <span class="tag_label">example</span>
-              <a href="#" title="remove" class="tag_dismiss">&times;</a>
-            </div>
+        <div class="tag_element">
+          <span class="tag_label">example</span>
+          <a href="#" title="remove" class="tag_dismiss">&times;</a>
+        </div>
 
         <input id="hidden_input" name="hidden_input" type="text" maxlength="40" style="width: 60px;">
       </div>
 
-      <script type="text/javascript">
-        var skills_input = $("#tag_list");
 
-        $("#tag_box").find(".tag_dismiss").click(function(){  
-          var this_tag = $(this).parent();
-          this_tag.remove(); //ok...
-          var old_text = skills_input.val();
-          var pattern = this_tag.attr("data-skillname") + "$%";
-          var corrected_value = old_text.replace(pattern, "");
-          skills_input.val(corrected_value);
-        });
-      </script>
-
-
-      <input class="submit_btn" name="commit" type="submit" value="submit">
+      <input class="submit_btn" name="commit" type="submit" value="submit (dummy)">
     </form>
 
   </div>

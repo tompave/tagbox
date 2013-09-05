@@ -6,7 +6,7 @@ $(function(){
 
     setupSimulatedFocus();
     setupInputKeyPressHandling();
-
+    setupDimissTagListener();
 });
 
 
@@ -38,7 +38,6 @@ function setupSimulatedFocus(){
 
 
 
-
 /**
  *
  */
@@ -65,6 +64,27 @@ function setupInputKeyPressHandling(){
 }
 
 
+
+
+/**
+ *  
+ */
+function setupDimissTagListener() {
+    $("#tag_box").on("click",
+                     ".tag_element > .tag_dismiss",
+                     null,
+                     function(event){
+                        event.preventDefault();
+                        removeTag($(this).parent());
+                     });
+}
+
+
+
+
+
+
+
 /**
  *
  */
@@ -84,6 +104,8 @@ function handleAutocompletionRemote(){
 }
 
 
+
+
 /**
  *  encapsulates logic to adjust the hidden input's width
  */
@@ -99,6 +121,8 @@ function adjustHiddenInputWidth() {
 }
 
 
+
+
 /**
  *  decides whether to create a tag and fires the process
  */
@@ -109,6 +133,8 @@ function verifyAndCreateTag() {
     if(text.length > 0)
         insertTag(text);
 }
+
+
 
 
 /**
@@ -122,20 +148,14 @@ function insertTag(text) {
     jq_newTag.insertBefore(jq_hiddenInput);
 
     jq_hiddenInput.val("").css("width", "60px");
+ 
 
-    //registers a handler to remove the tag
-    jq_newTag.find(".tag_dismiss").click(function(){
-        jq_newTag.remove();
-        var old_text = jq_tagsFormInput.val();
-        var pattern = text + "$%";
-        var corrected_value = old_text.replace(pattern, "");
-        jq_tagsFormInput.val(corrected_value);
-    });
     //adds the skill string to the hidden input in the form.
     //I'm using "$%" to separate entries. I'll parse and split the string server-side
     var new_value = jq_tagsFormInput.val() + text + "$%";
     jq_tagsFormInput.val(new_value);
 }
+
 
 
 /**
@@ -146,3 +166,26 @@ function tagHtmlString(text) {
                     "</span><a href='#' title='remove' class='tag_dismiss'>&times;</a></div>";
     return tag_str;
 }
+
+
+
+
+
+
+/**
+ *  
+ */
+function removeTag(jq_tag){
+    var jq_tagsFormInput = $("#tag_list");
+    var tagName = jq_tag.find(".tag_label").html();
+
+    // remove the tag from the tag box
+    jq_tag.remove();
+
+    // remove the tag from the hidden form input
+    var originalValue = jq_tagsFormInput.val();
+    var pattern = tagName + "$%";
+    var newValue = originalValue.replace(pattern, "");
+    jq_tagsFormInput.val(newValue);
+}
+
