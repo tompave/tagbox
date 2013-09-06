@@ -150,7 +150,7 @@ function buildTagHtmlString(text) {
  *  builds the html string for a hidden form input
  */
 function buildHiddenInputHtmlString(text) {
-    var input_str =  "<input id='" + text + "' name='tag_list[]' type='hidden' value='" + text + "'>";
+    var input_str =  "<input name='tag_list[]' type='hidden' value='" + text + "'>";
     return input_str;
 }
 
@@ -163,8 +163,10 @@ function removeTagElementAndHiddenInput(jq_tag){
     var tagName = jq_tag.find(".tag_label").html();
     // remove the tag from the tag box
     jq_tag.remove();
+
     // remove the hidden input
-    $("input#"+tagName).remove();
+    var sel = '[value="' + tagName + '"]';
+    $(sel).remove();
 }
 
 

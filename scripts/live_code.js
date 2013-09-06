@@ -21,11 +21,10 @@ function updatePreview() {
     var jq_formContainer = $("#form_container");
 
     var html_code = jq_formContainer.html();
-    var escapedString = html_code.replace(/<input id/g, "\n\t&lt;input id");
+    var escapedString = html_code.replace(/<input name/g, "\n\t&lt;input name");
 
     escapedString = escapedString.replace(/<div class=\"tag_element/g,'\n\t&lt;div class="tag_element');
     escapedString = escapedString.replace(/</g,"&lt;").replace(/>/g,"&gt;");
-
 
     jq_liveCodePreview.html(escapedString);
 }
