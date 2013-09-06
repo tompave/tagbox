@@ -8,6 +8,7 @@
 
 body {
   font-family: Helvetica, sans-serif;
+  background-color: rgba(240,255,240,0.7);
 }
 
 
@@ -104,9 +105,7 @@ body {
   border: none;
   &:focus { outline: none; }
 
-  // border: 1px solid #aaa;
-  // border-radius: 4px;
-  background-color: #fff7b8;  
+  //background-color: #fff7b8;  // --------- DEBUG
 }
 
 
@@ -153,14 +152,17 @@ h1 {
 kbd {
   font-family: consolas, monospace;
   font-size: 0.8em;
-  line-height: 13px;
+
   padding: 5px 8px 2px;
   border: 1px solid #aaa;
   margin-right: 3px;
+
   @include border-radius(3px);
 
   @include box-shadow(0 1px 1px 1px rgba(0,0,0,0.3),
                       inset 0 0 3px 0 rgba(0,0,0,0.1));
+
+  background-color: #fff;
 }
 
 
@@ -174,5 +176,7 @@ pre {
   height: auto;
   width: 800px;
   margin: 20px auto;
+  background-color: #fff;
+  @include border-radius(4px);
 }
 

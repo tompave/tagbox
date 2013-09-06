@@ -66,15 +66,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* line 9, ../sass/tag_box.scss */
 body {
   font-family: Helvetica, sans-serif;
+  background-color: rgba(240, 255, 240, 0.7);
 }
 
-/* line 14, ../sass/tag_box.scss */
+/* line 15, ../sass/tag_box.scss */
 #form_container {
   width: 400px;
   margin: 25px auto;
 }
 
-/* line 19, ../sass/tag_box.scss */
+/* line 20, ../sass/tag_box.scss */
 #tag_box {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -102,7 +103,7 @@ body {
   box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.15), 0 0 5px rgba(13, 129, 212, 0.5);
 }
 
-/* line 41, ../sass/tag_box.scss */
+/* line 42, ../sass/tag_box.scss */
 .tag_element {
   display: inline-block;
   min-width: 30px;
@@ -122,17 +123,17 @@ body {
   background-color: #49adf4;
   cursor: pointer;
 }
-/* line 64, ../sass/tag_box.scss */
+/* line 65, ../sass/tag_box.scss */
 .tag_element:hover {
   background-color: #1997f1;
 }
 
-/* line 73, ../sass/tag_box.scss */
+/* line 74, ../sass/tag_box.scss */
 .tag_label {
   float: left;
 }
 
-/* line 79, ../sass/tag_box.scss */
+/* line 80, ../sass/tag_box.scss */
 .tag_dismiss {
   float: right;
   margin-left: 10px;
@@ -141,13 +142,13 @@ body {
   text-decoration: none;
   text-align: center;
 }
-/* line 86, ../sass/tag_box.scss */
+/* line 87, ../sass/tag_box.scss */
 .tag_dismiss:hover {
   color: #ffc540;
   text-decoration: none;
 }
 
-/* line 94, ../sass/tag_box.scss */
+/* line 95, ../sass/tag_box.scss */
 #type_target {
   height: 22px;
   width: 40px;
@@ -157,14 +158,13 @@ body {
   font-family: consolas, monospace;
   box-shadow: none;
   border: none;
-  background-color: #fff7b8;
 }
-/* line 105, ../sass/tag_box.scss */
+/* line 106, ../sass/tag_box.scss */
 #type_target:focus {
   outline: none;
 }
 
-/* line 115, ../sass/tag_box.scss */
+/* line 114, ../sass/tag_box.scss */
 input[type="submit"] {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -188,13 +188,13 @@ input[type="submit"] {
   -o-transition: background-color 0.4s, color 0.4s;
   transition: background-color 0.4s, color 0.4s;
 }
-/* line 138, ../sass/tag_box.scss */
+/* line 137, ../sass/tag_box.scss */
 input[type="submit"]:hover {
   color: #fff;
   background-color: #0d81d4;
 }
 
-/* line 145, ../sass/tag_box.scss */
+/* line 144, ../sass/tag_box.scss */
 h1 {
   font-size: 18px;
   font-weight: bold;
@@ -203,11 +203,10 @@ h1 {
   color: #555;
 }
 
-/* line 153, ../sass/tag_box.scss */
+/* line 152, ../sass/tag_box.scss */
 kbd {
   font-family: consolas, monospace;
   font-size: 0.8em;
-  line-height: 13px;
   padding: 5px 8px 2px;
   border: 1px solid #aaa;
   margin-right: 3px;
@@ -219,9 +218,10 @@ kbd {
   -webkit-box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.3), inset 0 0 3px 0 rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.3), inset 0 0 3px 0 rgba(0, 0, 0, 0.1);
   box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.3), inset 0 0 3px 0 rgba(0, 0, 0, 0.1);
+  background-color: #fff;
 }
 
-/* line 167, ../sass/tag_box.scss */
+/* line 169, ../sass/tag_box.scss */
 pre {
   font-family: consolas, monospace;
   font-size: 12px;
@@ -232,4 +232,10 @@ pre {
   height: auto;
   width: 800px;
   margin: 20px auto;
+  background-color: #fff;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
 }
