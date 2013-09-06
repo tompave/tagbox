@@ -80,22 +80,25 @@ body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
   border-radius: 5px;
-  border: 1px solid #ccc;
-  background-color: #fff;
   -webkit-box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.15);
   box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.15);
+  border: 1px solid #ccc;
+  background-color: #fff;
   cursor: text;
-  position: relative;
   min-height: 80px;
   height: auto;
-  padding: 5px 5px;
-  margin: 5px auto 20px;
   overflow-y: visible;
   overflow-x: hidden;
+  padding: 5px;
+  margin: 5px auto 20px;
 }
-/* line 11, ../sass/_TP_mixins.scss */
+/* line 18, ../sass/_TP_mixins.scss */
 #tag_box.has_focus {
   border-color: #00c3ff;
   -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.15), 0 0 5px rgba(13, 129, 212, 0.5);
@@ -103,7 +106,7 @@ body {
   box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.15), 0 0 5px rgba(13, 129, 212, 0.5);
 }
 
-/* line 42, ../sass/tag_box.scss */
+/* line 30, ../sass/tag_box.scss */
 .tag_element {
   display: inline-block;
   min-width: 30px;
@@ -123,17 +126,17 @@ body {
   background-color: #49adf4;
   cursor: pointer;
 }
-/* line 65, ../sass/tag_box.scss */
+/* line 53, ../sass/tag_box.scss */
 .tag_element:hover {
   background-color: #1997f1;
 }
 
-/* line 74, ../sass/tag_box.scss */
+/* line 62, ../sass/tag_box.scss */
 .tag_label {
   float: left;
 }
 
-/* line 80, ../sass/tag_box.scss */
+/* line 68, ../sass/tag_box.scss */
 .tag_dismiss {
   float: right;
   margin-left: 10px;
@@ -142,13 +145,13 @@ body {
   text-decoration: none;
   text-align: center;
 }
-/* line 87, ../sass/tag_box.scss */
+/* line 75, ../sass/tag_box.scss */
 .tag_dismiss:hover {
   color: #ffc540;
   text-decoration: none;
 }
 
-/* line 95, ../sass/tag_box.scss */
+/* line 83, ../sass/tag_box.scss */
 #type_target {
   height: 22px;
   width: 40px;
@@ -159,12 +162,12 @@ body {
   box-shadow: none;
   border: none;
 }
-/* line 106, ../sass/tag_box.scss */
+/* line 94, ../sass/tag_box.scss */
 #type_target:focus {
   outline: none;
 }
 
-/* line 114, ../sass/tag_box.scss */
+/* line 102, ../sass/tag_box.scss */
 input[type="submit"] {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -188,13 +191,13 @@ input[type="submit"] {
   -o-transition: background-color 0.4s, color 0.4s;
   transition: background-color 0.4s, color 0.4s;
 }
-/* line 137, ../sass/tag_box.scss */
+/* line 125, ../sass/tag_box.scss */
 input[type="submit"]:hover {
   color: #fff;
   background-color: #0d81d4;
 }
 
-/* line 144, ../sass/tag_box.scss */
+/* line 132, ../sass/tag_box.scss */
 h1 {
   font-size: 18px;
   font-weight: bold;
@@ -203,7 +206,7 @@ h1 {
   color: #555;
 }
 
-/* line 152, ../sass/tag_box.scss */
+/* line 140, ../sass/tag_box.scss */
 kbd {
   font-family: consolas, monospace;
   font-size: 0.8em;
@@ -221,7 +224,7 @@ kbd {
   background-color: #fff;
 }
 
-/* line 169, ../sass/tag_box.scss */
+/* line 157, ../sass/tag_box.scss */
 pre {
   font-family: consolas, monospace;
   font-size: 12px;
