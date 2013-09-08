@@ -42,7 +42,7 @@ To use the plugin, you'll need a `<form>` containing the `<div>` you plan to use
 Once you have setup your `<form>` and your `<div>`, you can just call:
 
 ```javascript
-  $("#tag_box").tagbox();
+$("#tag_box").tagbox();
 ```
 
 The result will be:
@@ -69,11 +69,11 @@ The result will be:
 You can pass the function an optional object with some configuration values. Here are the defaults:
 
 ```javascript
-  $("#tag_box").tagbox({
-    typeTargetNameAndId : "type_target",
-    tagInputsArrayName : "tag_list",
-    includeExampleTag : true
-  });
+$("#tag_box").tagbox({
+  typeTargetNameAndId : "type_target",
+  tagInputsArrayName : "tag_list",
+  includeExampleTag : true
+});
 ```
 
 
