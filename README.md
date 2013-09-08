@@ -87,7 +87,7 @@ Of course you can use your own.
 
 ##How it works
 
-The plugin listens for keypress events and reacts on <kbd>enter</kbd>, <kbd>,</kbd>, <kbd>space</kbd> or <kbd>tab</kbd>.  
+The plugin listens for keypress events and reacts on `enter`, `,`, `space` or `tab`.  
 When one of these keys is pressed, it creates a new graphical _tag\_element_ in the tag box, and inserts in the form a new hidden input for the new inserted value. The hidden inputs have a collective name (can be configured) and will be received by the server as an array of values.  
 Removing a graphical _tag\_element_ also removes the corresponding hidden input.  
 
