@@ -42,7 +42,7 @@ To use the plugin, you'll need a `<form>` containing the `<div>` you plan to use
 Once you have setup your `<form>` and your `<div>`, you can just call:
 
 ```javascript
-  $("#tagbox").tag_box();
+  $("#tag_box").tagbox();
 ```
 
 The result will be:
@@ -69,11 +69,23 @@ The result will be:
 You can pass to the function an optional object with some configuration. Here are the defaults:
 
 ```javascript
-  $("#tagbox").tag_box({
+  $("#tag_box").tagbox({
     typeTargetNameAndId : "type_target",
     tagInputsArrayName : "tag_list",
     includeExampleTag : true
   });
 ```
 
+
+###Style
+
+The plugin comes with a default stylesheet for the tag widget (SCSS).  
+Of course you can use your own.
+
+
+##How it works
+
+the plugin listens for keypress events and reacts on <kbd>enter</kbd>, <kbd>,</kbd>, <kbd>space</kbd> or <kbd>tab</kbd>.  
+When one of these keys is pressed, it creates a new graphical _tag\_element_ in the tag box, and inserts in the form a new hidden input for the new inserted value. The hidden inputs have a collective name (can be configured) and will be received by the server as an array of values.  
+Removing a graphical _tag\_element_ also removes the corresponding hidden input.  
 
