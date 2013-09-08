@@ -66,7 +66,7 @@ The result will be:
 
 ###Options
 
-You can pass to the function an optional object with some configuration. Here are the defaults:
+You can pass the function an optional object with some configuration values. Here are the defaults:
 
 ```javascript
   $("#tag_box").tagbox({
@@ -85,7 +85,7 @@ Of course you can use your own.
 
 ##How it works
 
-the plugin listens for keypress events and reacts on <kbd>enter</kbd>, <kbd>,</kbd>, <kbd>space</kbd> or <kbd>tab</kbd>.  
+The plugin listens for keypress events and reacts on <kbd>enter</kbd>, <kbd>,</kbd>, <kbd>space</kbd> or <kbd>tab</kbd>.  
 When one of these keys is pressed, it creates a new graphical _tag\_element_ in the tag box, and inserts in the form a new hidden input for the new inserted value. The hidden inputs have a collective name (can be configured) and will be received by the server as an array of values.  
 Removing a graphical _tag\_element_ also removes the corresponding hidden input.  
 
