@@ -99,7 +99,7 @@ If you want you can send me a pull request:
 
 * fork on GitHub
 * `git clone` your fork on your computer
-* `git checkout -b yout_new\_feature\_branch`
+* `git checkout -b your_new_feature_branch`
 * implement your modifications
 * `git add .` and `git commit`
 * `git push`
