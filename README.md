@@ -3,7 +3,7 @@
 A simple jQuery plugin to painlessly create input boxes for tag lists like the ones used on StackOverflow or Linkedin.  
 __jQueryUI is NOT required!__  
 
-![example screenshot](/pics/screenshot.png)
+![example screenshot](https://raw.github.com/tompave/tagbox/master/pics/screenshot.png)
 
 ##Demo
 A demo with live HTML preview is available [here](http://staticfiles.wonderingmachine.com/portfolio/tagbox/example.html).
