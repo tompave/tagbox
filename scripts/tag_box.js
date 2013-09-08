@@ -3,8 +3,16 @@
     var theForm;
     var theBox;
     var theTypeTarget;
+    var settings;
 
-    $.fn.tag_box = function() {
+    $.fn.tag_box = function(options) {
+
+        var defaults = {
+            typeTargetNameAndId : "type_target",
+            tagInputsArrayName : "tag_list"
+        };
+        settings = $.extend(defaults, options);
+
         theBox = this;
         theForm = theBox.parents("form");
         theTypeTarget = setupTypeTarget();
@@ -175,7 +183,7 @@
      *  builds the html string for a hidden form input
      */
     function buildHiddenInputHtmlString(text) {
-        var input_str =  "<input name='tag_list[]' type='hidden' value='" + text + "'>";
+        var input_str =  '<input name="' + settings.tagInputsArrayName + '[]" type="hidden" value="' + text + '">';
         return input_str;
     }
 
@@ -208,7 +216,7 @@
      *  builds the html string for the example tag
      */
     function buildTypeTarget() {
-        var tagStr = '<input name="type_target" id="type_target" type="text" maxlength="40">';
+        var tagStr = '<input name="' + settings.typeTargetNameAndId + '" id="' + settings.typeTargetNameAndId + '" type="text" maxlength="40">';
         return tagStr;
     }
 
