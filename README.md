@@ -95,7 +95,7 @@ Removing a graphical _tag\_element_ also removes the corresponding hidden input.
 ##Contribute
 
 With this plugin I wanted to keep things simple, but I'd like to hear suggestions about features and configuration options.  
-If you want you can send me  pull request:
+If you want you can send me a pull request:
 
 * fork on GitHub
 * `git clone` your fork on your computer
