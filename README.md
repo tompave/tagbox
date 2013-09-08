@@ -1,15 +1,16 @@
 #tagbox
 
 A simple jQuery plugin to painlessly create input boxes for tag lists like the ones used on StackOverflow or Linkedin.  
+__jQueryUI is NOT required!__  
 
 ![example screenshot](/pics/screenshot.png)
 
 
 ##How To
 
-###what you need
+###What you'll need
 
-Just import jQuery (either `1.10` or `2.0`), the plugin javascript file and the related stylesheet (a default CSS file is inlcuded). __jQueryUI is NOT required!__  
+Just import jQuery (either `1.10` or `2.0`), the plugin javascript file and the related stylesheet (a default CSS file is inlcuded).   
 
 ```html
 <head>
@@ -36,7 +37,7 @@ To use the plugin, you'll need a `<form>` containing the `<div>` you plan to use
 </form>
 ```
 
-###trigger the plugin
+###Trigger the plugin
 
 Once you have setup your `<form>` and your `<div>`, you can just call:
 
@@ -52,7 +53,7 @@ The result will be:
   <div id="tag_box">
     <div class="tag_element">
       <span class="tag_label">example</span>
-      <a href="#" title="remove" class="tag_dismiss">×</a>
+      <a href="#" title="remove" class="tag_dismiss">&times;</a>
     </div>
       
     <input name="type_target" id="type_target" type="text" maxlength="40">
