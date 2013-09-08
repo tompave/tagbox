@@ -5,7 +5,7 @@
     var theTypeTarget;
     var settings;
 
-    $.fn.tag_box = function(options) {
+    $.fn.tagbox = function(options) {
 
         var defaults = {
             typeTargetNameAndId : "type_target",

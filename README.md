@@ -18,7 +18,7 @@ Just import jQuery (either `1.10` or `2.0`), the plugin javascript file and the 
   <link rel="stylesheet" type="text/css" href="style/tag_box.css"> <!-- tagbox related CSS -->
 
   <script type="text/javascript" src="scripts/jquery-2.0.3.min.js"></script>
-  <script type="text/javascript" src="scripts/tag_box.min.js"></script> <!-- the plugin -->
+  <script type="text/javascript" src="scripts/tagbox.min.js"></script> <!-- the plugin -->
   <script type="text/javascript" src="scripts/logic.js"></script> <!-- your custom script -->
 </head>
 ```
@@ -42,7 +42,7 @@ To use the plugin, you'll need a `<form>` containing the `<div>` you plan to use
 Once you have setup your `<form>` and your `<div>`, you can just call:
 
 ```javascript
-  $("#tag_box").tag_box();
+  $("#tagbox").tag_box();
 ```
 
 The result will be:
@@ -69,7 +69,7 @@ The result will be:
 You can pass to the function an optional object with some configuration. Here are the defaults:
 
 ```javascript
-  $("#tag_box").tag_box({
+  $("#tagbox").tag_box({
     typeTargetNameAndId : "type_target",
     tagInputsArrayName : "tag_list",
     includeExampleTag : true
