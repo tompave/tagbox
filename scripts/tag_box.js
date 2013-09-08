@@ -80,7 +80,6 @@
         //adjust width on keyup as well, to cover any case (crossbrowser)
         theTypeTarget.keyup(function(event){
             adjustTypeTargetWidth();
-            //searchSuggestions();
         });
     }
 
