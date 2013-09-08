@@ -5,6 +5,8 @@ __jQueryUI is NOT required!__
 
 ![example screenshot](/pics/screenshot.png)
 
+##Demo
+A demo with live HTML preview is available [here](http://staticfiles.wonderingmachine.com/portfolio/tagbox/example.html).
 
 ##How To
 
@@ -88,4 +90,18 @@ Of course you can use your own.
 The plugin listens for keypress events and reacts on <kbd>enter</kbd>, <kbd>,</kbd>, <kbd>space</kbd> or <kbd>tab</kbd>.  
 When one of these keys is pressed, it creates a new graphical _tag\_element_ in the tag box, and inserts in the form a new hidden input for the new inserted value. The hidden inputs have a collective name (can be configured) and will be received by the server as an array of values.  
 Removing a graphical _tag\_element_ also removes the corresponding hidden input.  
+
+
+##Contribute
+
+With this plugin I wanted to keep things simple, but I'd like to hear suggestions about features and configuration options.  
+If you want you can send me  pull request:
+
+* fork on GitHub
+* `git clone` your fork on your computer
+* `git checkout -b yout_new\_feature\_branch`
+* implement your modifications
+* `git add .` and `git commit`
+* `git push`
+* create a pull request on GitHub
 
