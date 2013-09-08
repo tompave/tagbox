@@ -1,0 +1,90 @@
+@import "TP_compass_defaults";
+@import "compass";
+@import "compass/reset";
+
+@import "TP_variables";
+
+body {
+  font-family: Helvetica, sans-serif;
+  background-color: rgba(240,255,240,0.7);
+}
+
+
+
+h1 {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin: 25px auto 20px;
+  color: #555;
+}
+
+
+#form_container {
+  width: 400px;
+  margin: 25px auto;
+}
+
+
+
+input[type="submit"] {
+  @include box-sizing("border-box");
+  @include appearance(none);
+  
+  outline: none;
+  cursor: pointer;
+
+  display: block;
+
+  margin: 0 auto;
+  padding: 4px 10px;
+
+  border: 1px solid #777;
+  border-radius: 3px;
+
+  font-size: 13px;
+  text-decoration: none;
+  color: #555;
+  text-align: center;
+
+  background-color: #fff;
+
+  @include transition(background-color 0.4s, color 0.4s);
+  &:hover {
+    color: #fff;
+    background-color: $blue;
+  }
+}
+
+
+
+kbd {
+  font-family: consolas, monospace;
+  font-size: 0.8em;
+
+  padding: 5px 8px 2px;
+  border: 1px solid #aaa;
+  margin-right: 3px;
+
+  @include border-radius(3px);
+
+  @include box-shadow(0 1px 1px 1px rgba(0,0,0,0.3),
+                      inset 0 0 3px 0 rgba(0,0,0,0.1));
+
+  background-color: #fff;
+}
+
+
+pre {
+  font-family: consolas, monospace;
+  font-size: 12px;
+  border: 1px solid #aaa;
+  padding: 3px;
+  overflow-x: auto;
+  overflow-y: visible;
+  height: auto;
+  width: 800px;
+  margin: 20px auto;
+  background-color: #fff;
+  @include border-radius(4px);
+}
