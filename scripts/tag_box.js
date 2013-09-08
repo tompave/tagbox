@@ -9,7 +9,8 @@
 
         var defaults = {
             typeTargetNameAndId : "type_target",
-            tagInputsArrayName : "tag_list"
+            tagInputsArrayName : "tag_list",
+            includeExampleTag : true
         };
         settings = $.extend(defaults, options);
 
@@ -33,8 +34,10 @@
      *
      */
     function setupExampleTagElement(){
-        var exampleTagElement = $(buildExampleTagElement());
-        theBox.prepend(exampleTagElement);
+        if(settings.includeExampleTag){
+            var exampleTagElement = $(buildExampleTagElement());
+            theBox.prepend(exampleTagElement);
+        }
     }
 
 

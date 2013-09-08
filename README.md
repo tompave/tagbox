@@ -4,13 +4,12 @@ A simple jQuery plugin to painlessly create input boxes for tag lists like the o
 
 ![example screenshot](/pics/screenshot.png)
 
--------
 
 ##How To
 
 ###what you need
 
-Just import jQuery (either `1.10` or `2.0`), the plugin javascript file, and the related stylesheet (a default CSS file is inlcuded). __jQueryUI is NOT required!__  
+Just import jQuery (either `1.10` or `2.0`), the plugin javascript file and the related stylesheet (a default CSS file is inlcuded). __jQueryUI is NOT required!__  
 
 ```html
 <head>
@@ -26,7 +25,6 @@ Just import jQuery (either `1.10` or `2.0`), the plugin javascript file, and the
 (of course, you can package and minify everything in a single file)
 
 
-###required HTML
 
 To use the plugin, you'll need a `<form>` containing the `<div>` you plan to use as the tag input.
 
@@ -38,11 +36,32 @@ To use the plugin, you'll need a `<form>` containing the `<div>` you plan to use
 </form>
 ```
 
-Once you have that, you can just call:
+###trigger the plugin
+
+Once you have setup your `<form>` and your `<div>`, you can just call:
 
 ```javascript
   $("#tag_box").tag_box();
 ```
+
+The result will be:
+
+```html
+<form id="the_parent_form" accept-charset="UTF-8" action="/form_action" method="post">
+  <!-- other inputs and elements... -->
+  <div id="tag_box">
+    <div class="tag_element">
+      <span class="tag_label">example</span>
+      <a href="#" title="remove" class="tag_dismiss">×</a>
+    </div>
+      
+    <input name="type_target" id="type_target" type="text" maxlength="40">
+  </div>
+  <!-- other inputs and elements... -->
+</form>
+```
+
+
 
 ###Options
 
@@ -51,7 +70,8 @@ You can pass to the function an optional object with some configuration. Here ar
 ```javascript
   $("#tag_box").tag_box({
     typeTargetNameAndId : "type_target",
-    tagInputsArrayName : "tag_list"
+    tagInputsArrayName : "tag_list",
+    includeExampleTag : true
   });
 ```
 
