@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>tag box</title>
+  <link rel="stylesheet" type="text/css" href="stylesheets/layout.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/tag_box.css">
+  <script type="text/javascript" src="scripts/jquery-2.0.3.min.js"></script>
+  <!--<script type="text/javascript" src="scripts/jquery-1.10.2.min.js"></script>-->
+
+  <script type="text/javascript" src="scripts/tagbox.js"></script>
+  <script type="text/javascript" src="scripts/logic.js"></script>
+  <script type="text/javascript" src="scripts/live_code.js"></script>
+</head>
+<body>
+
+  <h1>press <kbd>enter</kbd>, <kbd>,</kbd>, <kbd>space</kbd> or <kbd>tab</kbd> to separate tags</h1>
+
+  <div id="form_container">
+    <form id="the_form" accept-charset="UTF-8" action="/form_action" method="post">      
+
+      <div id="tag_box">
+      </div>
+
+
+      <input class="submit_btn" name="commit" type="submit" value="submit (dummy)" disabled="true">
+    </form>
+  </div>
+
+  <div id="live_code_container">
+    <pre><code id="live_code_preview"></code></pre>
+  </div>
+
+</body>
+</html>
