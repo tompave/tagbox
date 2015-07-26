@@ -6,7 +6,7 @@ __jQueryUI is NOT required!__
 ![example screenshot](https://raw.github.com/tompave/tagbox/master/pics/screenshot.png)
 
 ##Demo
-A demo with live HTML preview is available [here](http://staticfiles.wonderingmachine.com/portfolio/tagbox/example.html).
+A demo with live HTML preview is available [here](http://tommaso.pavese.me/tagbox/example.html).
 
 ##How To
 
